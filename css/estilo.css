@@ -1,0 +1,244 @@
+:root{
+    --font-color1:#ffffff;  /*cor da fonte 1*/
+    --font-color2:#fff; /*cor da fonte 2*/
+    --font-color3:#db8da7; /*cor da fonte 3*/
+    --font-color4: #a5396b; /*cor da fonte 4 */
+    --bg-color1:rgb(76, 226, 211);  /*cor de fundo 1 */
+    --bg-color2:#ffcbdf; /*cor de fundo 2*/
+}
+*{
+  margin: 0;
+  padding:0; /*zera todoso os padding*/
+  box-sizing: border-box; /* limpa as bordas do campos*/
+  text-decoration: none; /* tira a linha de baixo do texto*/
+  list-style: none; /* tira as bolinha da lista não ordenadas*/
+}
+body{
+    background: var(--bg-color2); /*coloca cor de fundo usando variavel*/
+}
+/*Cabeçalho da Página*/
+header{
+	display:flex; /*deixa a tela flexivel ex. um do lado do outro*/
+	justify-content:space-between;/*coloca imagem de um lado e o nav do outro */
+	padding-left:20px; /*colaca 20px de padding(espaço depois da margim ou entre os elementos) a esquerda*/
+	padding-right:20px; /*coloca 20px de padding(espaço depois da margim ou entre os elementos)  a direita*/
+    background:var(--font-color3); /*coloca cor de fundo usando variavel*/
+	align-items:center;	 /*alinhamento dos items ao centro*/
+    height: 100px;
+}
+header img{
+    align-items: center;
+	width:200px; /*largura de 150px*/
+	height:100px; /*altura de 100px*/
+	margin:10px 0px; /*margim de 10px top e bottom 3 0px right e left */
+}
+  
+/*Section*/
+section{
+    display:flex; /*deixa a tela flexivel ex. um do lado do outro*/
+	justify-content:space-between; /*coloca imagem de um lado e o nav do outro */
+    margin-top: 100px; /*coloca margem superior de 100px*/
+}
+/*nav ul e li*/
+nav ul li{
+    text-decoration: none; /* tira a linha de baixo do texto*/
+    display: inline; /*deixa os elemento todos em linha*/
+    width: 120px;
+    height: 30px; 
+    margin:2px; 
+    padding: 1px 5px 1px 5px; 
+    background: var(--font-color3); 
+    color: var(--font-color2);
+    font-size: 1rem; 
+    text-transform: uppercase; 
+    border-radius: 15px;
+    justify-content: center; 
+    align-items: center; 
+}
+/*na ul li e a*/
+nav ul li a{
+    color: var(--font-color2); /*coloca cor da fonte usando variavel*/
+}
+/*hover ao colocar o mouse em cima do elemento*/
+nav ul li a:hover{
+    color:var(--font-color4); /*coloca cor da fonte usando variavel*/
+    text-decoration: underline; /*coloca uma sublinhado no texto ao passar o mouse*/
+}
+/*classe banner*/
+.banner{
+	padding:0px; /*coloca padding nos 4 lados*/ 
+	overflow:hidden; /*especifica quando o conteúdo de um elemento de nível de bloco deve ser cortado(ocultado), */
+	justify-content:center; /* deixa os elementos ao centro*/
+	align-items:center; /*alinhamento dos items ao centro*/
+}
+/*classe buscador*/
+.buscador{
+	margin:10px 0px; /*margim de 10px top e bottom 3 0px right e left */
+	flex-direction:column; /*deixa os elementos em coluna*/
+	align-items:center; /*alinhamento dos items ao centro*/
+}
+/*elemento p da classe buscador */
+.buscador p{
+	width:800px; /*largura de 800px*/
+	display:flex; /*deixa a tela flexivel ex. um do lado do outro*/
+	margin-top:10px; /*margim top de 10px*/
+	flex-direction:column; /*coloca os elementos em coluna*/
+	justify-content:center; /* deixa os elementos ao centro*/
+	align-items:center; /*alinhamento dos items ao centro*/
+}
+/*elemento form da classe buscador*/
+.buscador form{
+	width:800px; /*largura de 800px*/
+	border:1px solid var(--bg-color2); /*borda de 1px com uma cor usando variavel*/
+	padding:10px; /*coloca os padding de 10px*/
+	display:flex; /*deixa a tela flexivel ex. um do lado do outro*/
+	margin:10px 0px; /*margim de 10px top e bottom 3 0px right e left */
+	justify-content:center; /* deixa os elementos ao centro*/
+	align-items:center; /*alinhamento dos items ao centro*/
+}
+/*classe btnbuscar*/
+.btnBuscar{
+    width: 70px; /*largura de 70px*/
+    height: 50px; /*altura de 50px*/
+    border-radius: 10px; /*arredondar a borda com 10px*/
+}
+/* hover na classe btnBuscar*/
+.btnBuscar:hover{
+    box-shadow: 10px 5px 10px var(--font-color4);/*cor de sombra ao passar o mouse*/
+}
+/*classe redes*/
+.redes{
+	margin:auto; /*coloca as margens automaticas os 4 lados*/
+	background:var(--font-color1); /*coloca cor de fundo usando variavel*/
+	border-radius:100%; /* arredonda a borda com 100%*/
+	width:100px; /*largura de 100px*/
+	height: 100px; /* altura de 100px*/
+}
+/* hover na classe redes */
+.redes:hover{
+	background:var(--font-color4); /*coloca cor de fundo usando variavel*/
+    color:var(--font-color1) /*coloca cor na font usando variavel*/
+}
+/*classe contato e elemento a*/
+#contato a{
+    padding-top: 45px; /* padding superior de 45px*/
+    padding-left: 20px; /*padding a esquerda de 20px*/
+    color:#a5396b;
+}
+/*footer e o elemento p*/
+footer p{
+    display: flex; /*deixa a tela flexivel ex. um do lado do outro*/
+    margin-top: 200px; /*margim superior de 200px*/
+    justify-content: center; /* deixa os elementos ao centro*/
+    align-items: center; /*alinhamento dos items ao centro*/
+	color:var(--font-color4); /*coloca cor na font usando variavel*/
+	font-size: 1rem; /*tamanho da fonte de 1rem = 16px*/
+}
+#items h2{
+    flex-direction: column;
+}
+.card {
+    text-align: center;
+    /* display: inline-flex; */
+    flex-direction:column;
+    align-items:center;
+     max-width: 50%;
+    /* height: 200px; */
+    color: #4d0e0e;
+    margin-top: 15px;
+    margin-left: 10px;
+    }
+
+    .img-card{
+     flex-direction: column;
+    width: 100%;
+    height:50%;
+    border-radius: 100px;
+    box-shadow: 1px 10px 100px var(--font-color4);
+    
+    }
+
+    @media (max-width:500px){
+        /*corpo da pagina*/
+        body{
+            width: 100%;/*Largura da pagina de 100%*/
+        }
+        /*header e section*/
+        header,section{
+            padding-left:3%;/*padding a esquerda de 3%*/
+            padding-right:3%;/*padding a direita de 3%*/
+        }
+        header{
+            display:flex; /*deixa a tela flexivel ex. um do lado do outro*/
+            justify-content:space-between;/*coloca imagem de um lado e o nav do outro */
+            background:var(--font-color3); /*coloca cor de fundo usando variavel*/
+            align-items:center;	 /*alinhamento dos items ao centro*/
+            height: 100%;
+            width: 100%;
+        }
+        /*header*/
+        header{
+            flex-direction:column;/*coloca o menu embaixo do logo */
+        }
+        header img{
+            width:50%;/*largura de 50%*/     
+        }
+        header nav{
+            flex-direction:column;
+            width:100%;
+        }
+        /*nav ul li e a*/
+        nav ul li a{
+            display: flex; /*deixa a tela flexivel ex. um do lado do outro*/
+            width:100%;/*largura de 100%*/
+            height:80px; /*altura de 80px*/
+            font-size:50px;/*tamanho da fonte de 50px*/
+            justify-content: center; /* deixa os elementos ao centro*/
+            align-items: center; /*alinhamento dos items ao centro*/
+        }
+         /*colocando hover de nav ul li a */
+       nav ul li a:hover{
+        width: 100%; /*largura de 100%*/
+        border-radius: 15px; /*arredondado da borda de 15px*/
+        text-decoration: none; /*coloca uma sublinhado no texto ao passar o mouse*/
+        background: var(--font-color4); /*coloca cor de fundo usando variavel*/
+        color:var(--font-color1); /*coloca cor na font usando variavel*/
+        }
+        
+        /*classe buscador classe busca*/
+        .buscador form, .buscador p{
+            width:100%; /*largura de 100%*/
+        }
+        /*classe buscador , p select e label*/
+        .buscador p, select,label{
+            font-size:20px; /*tamanho da fonte de 20px da classe buscador, p, select e label*/
+        }
+
+        #items{
+            flex-direction: column;
+        }
+
+        .card {
+            text-align: center;
+            /* display: inline-flex; */
+            flex-direction: column;
+            align-items:center;
+             max-width: 60%;
+            /* height: 200px; */
+            color: #4d0e0e;
+            margin-top: 30px;
+            margin-left: 10%;
+            }
+
+            .img-card{
+             flex-direction: column;
+            width: 300px;
+            height:300px;
+            border-radius: 100px;
+            box-shadow: 1px 10px 100px var(--font-color4);
+            
+            }
+        .linha{
+            margin: 40px;
+        }
+    }
